@@ -1,0 +1,20 @@
+Step1:
+- Get stm32f429-freertos800
+https://github.com/winfred-lu/stm32f429-freertos800?utm_source=chatgpt.com
+git clone https://github.com/winfred-lu/stm32f429-freertos800.git
+- Get STM32F429I-Discovery_FW
+https://www.st.com/en/evaluation-tools/32f429idiscovery.html
+- Get freeRTOS kernal
+git clone https://github.com/FreeRTOS/FreeRTOS-Kernel.git
+- Get freeRTOS 
+git clone https://github.com/FreeRTOS/FreeRTOS.git
+- get UGFX
+git co https://bitbucket.org/Tectu/ugfx.git
+
+Step2: Modify Makefile
+- Change the direction for STDP / UGFX / RTOS
+- Add a new symbol RTOS_KERNAL
+- Correct the directions
+
+Step3: make clean
+Step4: make led-test
